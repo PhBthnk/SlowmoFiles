@@ -29,7 +29,7 @@ form {
 	color: #00000;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:small;
-	background-color:#FFFFFF;
+	background-color:transparent;
 	
 }
 
@@ -40,7 +40,8 @@ form {
 	border: 1px solid #CCCCCC;
 	padding: 9px;
 	background-color:#FFFFFF;
-	
+	position: absolute;
+	top: 10px
 }
 
 #breadcrumbs {
@@ -120,8 +121,6 @@ form {
 	float:left;
 	margin-right: 4px;
 }
-
-
 
 #listing a strong {
 	width: 300px;

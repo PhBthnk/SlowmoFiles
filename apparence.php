@@ -24,7 +24,8 @@ function f(n) {
 ?>
 </head>
 <body>
-<div id="logo" class='logo'></div>
+
+<img src="dlf/SlowMoFiles.png" id='logo' alt="SlowmoFile - Disconnecting People" href=''/>
 <div id="container">
   <h1>Directory Listing of <?php echo str_replace('\\', '', dirname(strip_tags($_SERVER['PHP_SELF']))).'/'.$leadon;?></h1>
   <div id="breadcrumbs"> <a href="<?php echo strip_tags($_SERVER['PHP_SELF']);?>">home</a> 

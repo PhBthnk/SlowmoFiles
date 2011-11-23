@@ -74,7 +74,11 @@ $hide = array(
 				'index.php',
 				'Thumbs',
 				'.htaccess',
-				'.htpasswd'
+				'.htpasswd',
+				'.git',
+				'README.md',
+				'apparence.php',
+				'.DS_Store'
 			);
 			
 /* Only Display Files With Extension... - if you only wish the user
@@ -102,7 +106,7 @@ Allow uploads? - If enabled users will be able to upload
 files to any viewable directory. You should really only enable
 this if the area this script is in is already password protected.
 */
-$allowuploads = false;
+$allowuploads = true;
 
 /* Upload Types - If you are allowing uploads but only want
 users to be able to upload file with specific extensions,
@@ -173,7 +177,7 @@ $filetypes = array (
 				'gz' => 'archive.png',
 				'asc' => 'sig.gif',
 			);
-			
+
 /*
 That's it! You are now ready to upload this script to the server.
 
@@ -272,7 +276,8 @@ if($allowuploads && $_FILES['file']) {
 
 $opendir = $includeurl.$leadon;
 if(!$leadon) $opendir = '.';
-if(!file_exists($opendir)) {
+if(!file_exists($opendir) or in_array($hide,$leadon)) {
+	print("MOO");
 	$opendir = '.';
 	$leadon = $startdir;
 }
@@ -347,6 +352,6 @@ if($_GET['order']=="desc" && $_GET['sort']!="size") {$dirs = @array_reverse($dir
 if($_GET['order']=="desc") {$files = @array_reverse($files);}
 $dirs = @array_values($dirs); $files = @array_values($files);
 
-exec("dlf/apparence.php");
+include("apparence.php");
 ?>
 

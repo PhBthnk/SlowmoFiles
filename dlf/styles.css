@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-	color: #6699FF;
+	color: #A3A3A3;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	font-size: medium;
@@ -30,29 +30,30 @@ form {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:small;
 	background-color:transparent;
-	
+	float: left;
 }
 
 #container {
 	width: 600px;
 	margin-left:auto;
 	margin-right:auto;
-	border: 1px solid #CCCCCC;
+	border: 1px solid #A3A3A3;
 	padding: 9px;
 	background-color:#FFFFFF;
 	position: absolute;
-	top: 10px
+	top: 10px;
+	right: 25%;
 }
 
 #breadcrumbs {
-	color: #6699FF;
+	color: #A3A3A3;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:small;
 	margin: 0 0 8px 8px;
 }
 
 #breadcrumbs a, #breadcrumbs a:visited, #breadcrumbs a:link, #breadcrumbs a:active {
-	color: #6699FF;
+	color: #A3A3A3;
 	text-decoration:none;
 }
 
@@ -67,7 +68,7 @@ form {
 }
 
 #listingheader {
-	color: #476BB3;
+	color: #A3A3A3;
 	font-weight:bold;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:small;
@@ -76,12 +77,12 @@ form {
 
 #listingheader a, #listingheader a:active, #listingheader a:visited, #listingheader a:link {
 	text-decoration: none;
-	color: #476BB3;
+	color: #A3A3A3;
 }
 
 #listingheader a:hover {
 	text-decoration: underline;
-	color: #476BB3;
+	color: #696969;
 }
 
 
@@ -98,14 +99,14 @@ form {
 }
 
 #listing {
-	border: 1px solid #A7C5FF;
+	border: 1px solid #A3A3A3;
 }
 
 #listing a {
 	display:block;
 	padding: 2px 5px 2px 5px;
 	font-size:small;
-	color: #6285CA;
+	color: #A3A3A3;
 	font-family:Arial, Helvetica, sans-serif;
 	text-decoration:none;
 	width:568px;
@@ -156,21 +157,21 @@ form {
 }
 
 #upload {
-	border: 1px solid #A7C5FF;
+	border: 1px solid #A3A3A3;
 	display:block;
 	margin-top: 10px;
 	font-size:small;
-	color: #6285CA;
+	color: #949494;
 	font-family:Arial, Helvetica, sans-serif;
 	text-decoration:none;
 	width:568px;
-	background-color: #E9F0FF;
+	background-color: #F5F5F5;
 }
 
 #uploadtitle {
-	background-color: #DBE6FE;
+	background-color: #EDEDED;
 	padding: 2px 5px 2px 5px;
-	border-bottom: 1px solid #A7C5FF;
+	border-bottom: 1px solid #A3A3A3;
 	
 }
 
@@ -195,7 +196,7 @@ form {
 }
 
 .b {
-	background-color: #E9F0FF;
+	background-color: #F5F5F5;
 	
 }
 

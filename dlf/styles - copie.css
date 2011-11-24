@@ -41,7 +41,7 @@ form {
 	padding: 9px;
 	background-color:#FFFFFF;
 	top: 10px;
-	clear: both;
+	position: centered;
 }
 
 #breadcrumbs {
